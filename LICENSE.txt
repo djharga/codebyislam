@@ -1,0 +1,11 @@
+CodeByIslam Website License
+
+Copyright (c) 2025 CodeByIslam
+
+Permission is hereby granted to any person obtaining a copy of this website and associated documentation files (the "Website"), to use the Website for personal and commercial use with attribution, subject to the following conditions:
+
+1. The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Website.
+2. The Website content may not be sold, sublicensed, or redistributed as a template or theme without prior written permission from the author.
+3. Any shared part of the Website must credit "CodeByIslam" as the source.
+
+THE WEBSITE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE WEBSITE OR THE USE OR OTHER DEALINGS IN THE WEBSITE.

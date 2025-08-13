@@ -1,0 +1,36 @@
+{
+  "name": "portfolio-landing-page",
+  "version": "1.0.0",
+  "description": "صفحة هبوط محفظة أعمال احترافية",
+  "main": "src/index.html",
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "lint:css": "stylelint src/**/*.css",
+    "lint:all": "npm run lint && npm run lint:css",
+    "format": "prettier --write src/**/*.{js,css}",
+    "format:check": "prettier --check src/**/*.{js,css}"
+  },
+  "keywords": [
+    "portfolio",
+    "landing-page",
+    "web-development",
+    "responsive-design"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-html": "^7.1.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

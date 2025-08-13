@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeByIslam | محفظة أعمال</title>
+    <!-- Security: Content Security Policy and related meta -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data: https://images.unsplash.com; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://unpkg.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com https://cdn.jsdelivr.net; font-src 'self' https://cdnjs.cloudflare.com; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codebyislam.com/" />
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+
+    <!-- Primary Meta -->
+    <meta
+      name="description"
+      content="CodeByislam للبرمجة والحلول الرقمية — محفظة أعمال Islam Libya. تطوير مواقع وتطبيقات ويب حديثة في مصر – القاهرة. تواصل عبر 01507619503 أو contact@codebyislam.com."
+    />
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:site_name" content="CodeByislam للبرمجة والحلول الرقمية" />
+    <meta property="og:title" content="CodeByislam | محفظة أعمال Islam Libya" />
+    <meta property="og:description" content="خدمات برمجة وحلول رقمية في مصر – القاهرة. هاتف: 01507619503" />
+    <meta property="og:url" content="https://codebyislam.com/" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=1200&q=80"
+    />
+    <meta property="og:image:alt" content="CodeByislam للبرمجة والحلول الرقمية" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CodeByislam | محفظة أعمال Islam Libya" />
+    <meta name="twitter:description" content="برمجة وحلول رقمية — مصر، القاهرة. هاتف: 01507619503" />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=1200&q=80"
+    />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://codebyislam.com/",
+        "name": "CodeByislam للبرمجة والحلول الرقمية",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://codebyislam.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Islam Libya",
+        "url": "https://codebyislam.com/",
+        "sameAs": ["https://www.linkedin.com/", "https://github.com/"],
+        "jobTitle": "Web Developer",
+        "homeLocation": {
+          "@type": "Place",
+          "address": { "@type": "PostalAddress", "addressCountry": "EG", "addressLocality": "القاهرة" }
+        },
+        "worksFor": { "@type": "Organization", "name": "CodeByislam للبرمجة والحلول الرقمية" }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CodeByislam للبرمجة والحلول الرقمية",
+        "url": "https://codebyislam.com/",
+        "telephone": "+201507619503",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "EG",
+          "addressLocality": "القاهرة",
+          "streetAddress": ""
+        }
+      }
+    </script>
+
+    <!-- الستايل الرئيسي -->
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- مكتبة AOS للتأثيرات الحركية عند التمرير -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- مكتبة Tippy.js للتلميحات -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+
+    <!-- مكتبات الرسوميات ثلاثية الأبعاد -->
+    <!-- Three.js - المكتبة الأساسية للرسوميات 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r158/three.min.js" defer></script>
+
+    <!-- GSAP - مكتبة الرسوميات المتقدمة -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <!-- إضافة ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  </head>
+  <body>
+    <!-- خلفية النجوم المتحركة -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <!-- زر تبديل الوضع المظلم -->
+    <div id="theme-toggle" class="theme-toggle" data-tippy-content="تبديل الوضع المظلم/الفاتح">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- قسم الرأس -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo" data-aos="fade-right" data-aos-duration="800">
+            <img src="assets/images/logo-codebyislam.svg" alt="CodeByislam للبرمجة والحلول الرقمية" class="logo-cbi" />
+          </div>
+          <ul class="nav-links" data-aos="fade-left" data-aos-duration="800">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عني</a></li>
+            <li><a href="#services">خدماتي</a></li>
+            <li><a href="#current-projects">مشاريعي</a></li>
+            <li><a href="#contact">اتصل بي</a></li>
+          </ul>
+          <button class="menu-btn" aria-label="قائمة التنقل">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- قسم الرئيسية -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+          <h1>مرحباً، أنا <span>Islam Libya</span></h1>
+          <h2>مطور ويب شغوف بالتصميم والبرمجة</h2>
+          <p class="hero-intro">
+            أهلاً وسهلاً بك في عالمي الرقمي! أنا مطور ويب عربي شغوف بتحويل الأفكار إلى واقع رقمي جميل ومفيد. أحب أن أبدع
+            في التصميم وأبرمج بحب، وأؤمن أن كل مشروع هو قصة جديدة تستحق أن تُروى بأفضل طريقة ممكنة.
+          </p>
+          <p class="hero-purpose">
+            هذا الموقع هو نافذتي الشخصية لعرض أفكاري ومشاريعي، ومكان للتواصل مع أشخاص مثلكم يشاركونني نفس الشغف بالتقنية
+            والإبداع. هنا ستجدون لمحة عن رحلتي في عالم البرمجة، والمشاريع التي أفتخر بها، والخدمات التي أقدمها.
+          </p>
+          <p class="hero-inspiration">
+            دعونا نتعرف على بعضنا البعض! استكشفوا الموقع واكتشفوا كيف يمكننا معاً تحويل رؤيتكم إلى واقع رقمي مذهل.
+          </p>
+          <div class="hero-buttons">
+            <a href="#current-projects" class="btn btn-primary">
+              <i class="fas fa-eye"></i>
+              استكشف مشاريعي
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i>
+              دعنا نتحدث!
+            </a>
+          </div>
+          <div class="social-icons">
+            <a href="#" data-tippy-content="LinkedIn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" data-tippy-content="GitHub" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" data-tippy-content="Twitter" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" data-tippy-content="Instagram" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+          <img
+            src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=800&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=480&q=80   480w,
+              https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=800&q=80   800w,
+              https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=1200&q=80 1200w
+            "
+            sizes="(max-width: 768px) 80vw, 480px"
+            alt="صورة شخصية - CodeByIslam"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- خلفية متحركة لقسم "عني" -->
+    <div class="animated-background about-bg">
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <!-- قسم عني -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down" data-aos-duration="800">
+          <h2>عني</h2>
+          <p>تعرف علي أكثر</p>
+        </div>
+        <div class="about-content">
+          <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+            <img
+              src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=800&q=80"
+              srcset="
+                https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=480&q=80   480w,
+                https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=800&q=80   800w,
+                https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=1200&q=80 1200w
+              "
+              sizes="(max-width: 768px) 80vw, 480px"
+              alt="صورة شخصية - CodeByIslam"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+            <h3>مرحباً! أنا Islam Libya</h3>
+            <p>
+              أنا مطور ويب عربي شغوف بالتقنية والإبداع، أعمل في مجال البرمجة منذ أكثر من 5 سنوات. أحب أن أتعلم كل يوم
+              وأجرب تقنيات جديدة، وأؤمن أن البرمجة ليست مجرد وظيفة بل هي فن وإبداع.
+            </p>
+            <p>
+              أعمل على تقديم حلول برمجية مبتكرة تلبي احتياجات العملاء وتحقق أهدافهم. أحب أن أتعاون مع أشخاص متحمسين
+              يشاركونني نفس الرؤية، ونعمل معاً لتحويل الأفكار إلى مشاريع رقمية مذهلة.
+            </p>
+            <div class="skills">
+              <div class="skill" data-aos="fade-up" data-aos-delay="100">
+                <h4>HTML & CSS</h4>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill" data-aos="fade-up" data-aos-delay="200">
+                <h4>JavaScript</h4>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill" data-aos="fade-up" data-aos-delay="300">
+                <h4>React</h4>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill" data-aos="fade-up" data-aos-delay="400">
+                <h4>Node.js</h4>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="500">
+              <i class="fas fa-download"></i>
+              تحميل السيرة الذاتية
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down" data-aos-duration="800">
+          <h2>خدماتي</h2>
+          <p>ما يمكنني تقديمه لك</p>
+        </div>
+
+        <!-- فقرة تقديمية عن الخدمات -->
+        <div class="services-intro" data-aos="fade-up" data-aos-duration="800">
+          <p>
+            أقدم مجموعة شاملة من الخدمات التقنية والتعليمية التي تجمع بين الإبداع والابتكار. كل خدمة مصممة بعناية لتلبية
+            احتياجاتك الخاصة، مع التركيز على أحدث التقنيات وأفضل الممارسات في مجال تطوير الويب. أعمل على تحويل أفكارك
+            إلى حلول رقمية متطورة تجمع بين الجمالية والوظائف، مع ضمان تجربة مستخدم استثنائية وأداء عالي.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>تطوير المواقع</h3>
+            <p>
+              أقوم بتصميم وتطوير مواقع ويب احترافية وعصرية، مع التركيز على تجربة المستخدم والأداء العالي. كل موقع هو قصة
+              فريدة تستحق أن تُروى بأفضل طريقة ممكنة، مع استخدام أحدث تقنيات CSS Grid و Flexbox لضمان التصميم المتجاوب
+              والمتطور.
+            </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>تطبيقات الويب</h3>
+            <p>
+              أطور تطبيقات ويب تفاعلية وسريعة الاستجابة، تعمل على جميع الأجهزة. معاً نصنع تجربة رقمية مذهلة تدهش
+              المستخدمين، باستخدام JavaScript المتقدم وReact لضمان التفاعل السلس والأداء المثالي.
+            </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>تصميم واجهات</h3>
+            <p>
+              أصمم واجهات مستخدم جميلة وسهلة الاستخدام، مع التركيز على الجمالية والوظائف. كل تصميم يحكي قصة ويجذب
+              الانتباه، مع استخدام مبادئ التصميم الحديثة وأحدث تقنيات CSS لضمان المظهر الاحترافي.
+            </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <h3>حلول برمجية</h3>
+            <p>
+              أقدم حلول برمجية مخصصة تلبي احتياجاتك الخاصة. معاً نحول أفكارك إلى واقع رقمي متطور ومفيد، مع التركيز على
+              الكود النظيف والمنظم والهندسة المعمارية المتقدمة.
+            </p>
+          </div>
+        </div>
+
+        <!-- نص تشجيعي للاطلاع على المشاريع -->
+        <div class="services-encouragement" data-aos="fade-up" data-aos-duration="800">
+          <p>
+            أدعوك لاستكشاف مشاريعي المختلفة وفهم القصة وراء كل تصميم. كل مشروع يمثل رحلة تعليمية وتقنية فريدة، حيث أتعلم
+            تقنيات جديدة وأطبق أفكار مبتكرة. ستجد في كل مشروع مزيجاً من الإبداع والوظائف، مع استخدام أحدث التقنيات مثل
+            CSS Grid و Flexbox و JavaScript المتقدم.
+          </p>
+        </div>
+
+        <!-- نص عن التقنيات الحديثة -->
+        <div class="technologies-info" data-aos="fade-up" data-aos-duration="800">
+          <h3>التقنيات الحديثة المستخدمة</h3>
+          <p>
+            أستخدم أحدث التقنيات وأفضل الممارسات في جميع مشاريعي. CSS Grid و Flexbox لإنشاء تخطيطات متجاوبة ومتطورة،
+            JavaScript ES6+ للتفاعل المتقدم، وأحدث معايير HTML5 لضمان التوافق مع جميع المتصفحات. كل مشروع هو فرصة لتطبيق
+            تقنيات جديدة وتطوير مهارات متقدمة.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- خلفية متحركة لقسم "المشاريع الجارية" -->
+    <div class="animated-background projects-bg">
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <!-- قسم المشاريع الحالية -->
+    <section id="current-projects" class="current-projects">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down" data-aos-duration="800">
+          <h2>مشاريعي الحالية</h2>
+          <p>أحدث المشاريع التي أعمل عليها بحب وشغف</p>
+        </div>
+        <div class="projects-grid" data-aos="fade-up" data-aos-duration="800">
+          <!-- مشروع تطوير موقع شركة تقنية -->
+          <div class="project-card green" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header">
+              <div class="date">15 يناير 2024</div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 3.75a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm0 6.75a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm1.5 7.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>موقع شركة تقنية</h3>
+              <p>
+                أعمل على تطوير موقع احترافي لشركة تقنية ناشئة، مع التركيز على التصميم العصري والأداء العالي. هذا المشروع
+                مميز لأنه يجمع بين الجمالية والوظائف!
+              </p>
+              <div class="progress">
+                <span>التقدم</span>
+                <div class="progress-bar"></div>
+                <span>90%</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <ul>
+                <li>
+                  <img
+                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=256&h=256&q=80&crop=faces"
+                    alt="عضو فريق - CodeByIslam"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2?auto=format&fit=crop&w=256&h=256&q=80&crop=faces"
+                    alt="عضو فريق - CodeByIslam"
+                  />
+                </li>
+                <a href="#" class="btn-add">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </ul>
+              <a href="#" class="btn-countdown">يومان متبقيان</a>
+            </div>
+          </div>
+
+          <!-- مشروع تطبيق إدارة المهام -->
+          <div class="project-card orange" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-header">
+              <div class="date">20 يناير 2024</div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 3.75a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm0 6.75a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm1.5 7.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>تطبيق إدارة المهام</h3>
+              <p>
+                أطور تطبيق ويب ذكي لإدارة المهام والمشاريع، يساعد المستخدمين على تنظيم أعمالهم بكفاءة. أحب هذا المشروع
+                لأنه يحل مشكلة حقيقية في حياتنا اليومية!
+              </p>
+              <div class="progress">
+                <span>التقدم</span>
+                <div class="progress-bar"></div>
+                <span>30%</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <ul>
+                <li>
+                  <img
+                    src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=256&h=256&q=80&crop=faces"
+                    alt="عضو فريق - CodeByIslam"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=256&h=256&q=80&crop=faces"
+                    alt="عضو فريق - CodeByIslam"
+                  />
+                </li>
+                <a href="#" class="btn-add">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </ul>
+              <a href="#" class="btn-countdown">3 أسابيع متبقية</a>
+            </div>
+          </div>
+
+          <!-- مشروع لوحة تحكم طبية -->
+          <div class="project-card red" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-header">
+              <div class="date">25 يناير 2024</div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 3.75a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm0 6.75a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm1.5 7.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>لوحة تحكم طبية</h3>
+              <p>
+                أعمل على تطوير نظام إدارة طبي متقدم، يساعد الأطباء والممرضين على تقديم رعاية أفضل للمرضى. هذا المشروع
+                مميز لأنه يساهم في تحسين الرعاية الصحية!
+              </p>
+              <div class="progress">
+                <span>التقدم</span>
+                <div class="progress-bar"></div>
+                <span>50%</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <ul>
+                <li>
+                  <img
+                    src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=256&h=256&q=80&crop=faces"
+                    alt="عضو فريق - CodeByIslam"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=256&h=256&q=80&crop=faces"
+                    alt="عضو فريق - CodeByIslam"
+                  />
+                </li>
+                <a href="#" class="btn-add">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </ul>
+              <a href="#" class="btn-countdown">أسبوعان متبقيان</a>
+            </div>
+          </div>
+
+          <!-- مشروع متجر إلكتروني -->
+          <div class="project-card blue" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-header">
+              <div class="date">30 يناير 2024</div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path
+                  fill-rule="evenodd"
+                  d="M12 3.75a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm0 6.75a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm1.5 7.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>متجر إلكتروني</h3>
+              <p>تصميم واجهة المستخدم</p>
+              <div class="progress">
+                <span>التقدم</span>
+                <div class="progress-bar"></div>
+                <span>20%</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <ul>
+                <li>
+                  <img
+                    src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=256&h=256&q=80&crop=faces"
+                    alt="عضو فريق - CodeByIslam"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=256&h=256&q=80&crop=faces"
+                    alt="عضو فريق - CodeByIslam"
+                  />
+                </li>
+                <a href="#" class="btn-add">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </ul>
+              <a href="#" class="btn-countdown">4 أسابيع متبقية</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-down" data-aos-duration="800">
+          <h2>اتصل بي</h2>
+          <p>دعنا نبدأ مشروعك معاً</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+            <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-envelope"></i>
+              <h3>البريد الإلكتروني</h3>
+              <p><a href="mailto:contact@codebyislam.com">contact@codebyislam.com</a></p>
+            </div>
+            <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-phone"></i>
+              <h3>الهاتف</h3>
+              <p><a href="tel:+201507619503">01507619503</a></p>
+            </div>
+            <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>الموقع</h3>
+              <p>مصر – القاهرة</p>
+            </div>
+          </div>
+          <div class="contact-form" data-aos="fade-left" data-aos-duration="1000">
+            <h3>دعنا نتحدث!</h3>
+            <p>
+              أنا متحمس للتعرف عليك والتعاون معك! أرسل لي رسالة وأخبرني عن مشروعك أو فكرتك، وسأكون سعيداً بمساعدتك في
+              تحويلها إلى واقع رقمي مذهل.
+            </p>
+            <form id="contactForm">
+              <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                <input type="text" id="name" name="name" placeholder="الاسم الكامل" required />
+              </div>
+              <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required />
+              </div>
+              <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                <input type="text" id="subject" name="subject" placeholder="الموضوع" required />
+              </div>
+              <div class="form-group" data-aos="fade-up" data-aos-delay="400">
+                <textarea id="message" name="message" placeholder="أخبرني عن مشروعك أو فكرتك..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="500">
+                <i class="fas fa-paper-plane"></i>
+                أرسل الرسالة
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer>
+      <div class="container">
+        <p>
+          شكراً لزيارتك! جميع الحقوق محفوظة لـ <span>CodeByislam للبرمجة والحلول الرقمية</span> — مصر – القاهرة — هاتف:
+          <a href="tel:+201507619503">01507619503</a> &copy; 2024
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="الرجوع إلى أعلى الصفحة" title="الرجوع للأعلى">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="M12 4l-7 7h4v7h6v-7h4z" />
+      </svg>
+    </button>
+
+    <!-- مكتبات JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6.3.7/dist/tippy.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- تهيئة المكتبات -->
+    <script>
+      // تهيئة AOS
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false,
+        offset: 100,
+      });
+
+      // تهيئة Tippy.js
+      tippy('[data-tippy-content]', {
+        placement: 'top',
+        animation: 'scale',
+        theme: 'light',
+        arrow: true,
+      });
+
+      // تهيئة زر الوضع المظلم
+      const darkModeToggle = document.getElementById('theme-toggle');
+      const body = document.body;
+
+      darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const icon = darkModeToggle.querySelector('i');
+
+        if (body.classList.contains('dark-mode')) {
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
+          localStorage.setItem('dark-mode', 'enabled');
+        } else {
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-moon');
+          localStorage.setItem('dark-mode', 'disabled');
+        }
+      });
+
+      // التحقق من الإعداد المحفوظ
+      if (localStorage.getItem('dark-mode') === 'enabled') {
+        body.classList.add('dark-mode');
+        const icon = darkModeToggle.querySelector('i');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      }
+    </script>
+
+    <!-- ملف JavaScript الرئيسي -->
+    <script src="3d-animations.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Interactive Particles Background (behind content) -->
+    <div id="cbi-particles-bg" aria-hidden="true"></div>
+
+    <!-- Custom Cursor (dot + ring) -->
+    <div id="cbi-cursor" class="cbi-cursor" aria-hidden="true">
+      <span class="cbi-cursor__dot"></span>
+      <span class="cbi-cursor__ring"></span>
+    </div>
+
+    <!-- tsParticles (slim build) -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@3/tsparticles.engine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-interaction-external-repulse@3/tsparticles.interaction.external.repulse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-circle@3/tsparticles.shape.circle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@3/tsparticles.slim.min.js"></script>
+
+    <!-- Cursor + Particles Init -->
+    <script>
+      (function () {
+        const root = document.documentElement;
+        const getVar = (name, fb) => getComputedStyle(root).getPropertyValue(name).trim() || fb;
+
+        // 1) Interactive Particles (tsParticles)
+        function particlesOptions() {
+          return {
+            background: { color: { value: 'transparent' } },
+            fpsLimit: 60,
+            detectRetina: true,
+            particles: {
+              number: { value: 60, density: { enable: true, area: 900 } },
+              color: { value: getVar('--primary-color', '#3b82f6') },
+              shape: { type: 'circle' },
+              opacity: { value: 0.35 },
+              size: { value: { min: 1, max: 3 } },
+              move: { enable: true, speed: 1, outModes: { default: 'out' } },
+              links: {
+                enable: true,
+                distance: 140,
+                color: getVar('--primary-light', '#60a5fa'),
+                opacity: 0.25,
+                width: 1,
+              },
+            },
+            interactivity: {
+              detectsOn: 'window',
+              events: {
+                onHover: { enable: true, mode: 'repulse' },
+                resize: true,
+              },
+              modes: { repulse: { distance: 110, duration: 0.4 } },
+            },
+          };
+        }
+
+        function loadParticles() {
+          if (!window.tsParticles) return;
+          tsParticles.load('cbi-particles-bg', particlesOptions());
+        }
+
+        loadParticles();
+        // Sync with dark-mode toggle (if class changes)
+        const themeObserver = new MutationObserver(() => {
+          tsParticles.dom().forEach(c => c.destroy());
+          loadParticles();
+        });
+        themeObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+        // 2) Custom Cursor (dot + ring) with magnetic hover
+        const cursor = document.getElementById('cbi-cursor');
+        if (!matchMedia('(pointer: coarse)').matches && cursor) {
+          const dot = cursor.querySelector('.cbi-cursor__dot');
+          const ring = cursor.querySelector('.cbi-cursor__ring');
+
+          // mark body as active only when cursor exists on fine pointers
+          document.body.classList.add('cbi-cursor-active');
+
+          let mx = 0,
+            my = 0,
+            tx = 0,
+            ty = 0;
+          let rtx = 0,
+            rty = 0;
+          const targets = document.querySelectorAll('a, button, .btn, img, .service-card, .project-card');
+
+          window.addEventListener('mouseleave', () => cursor.classList.remove('is-visible'), { passive: true });
+          // Show cursor as soon as the pointer moves inside the window
+          window.addEventListener(
+            'mousemove',
+            e => {
+              mx = e.clientX;
+              my = e.clientY;
+              if (!cursor.classList.contains('is-visible')) cursor.classList.add('is-visible');
+            },
+            { passive: true }
+          );
+
+          // Also restore visibility on window focus/visibility
+          window.addEventListener('focus', () => cursor.classList.add('is-visible'), { passive: true });
+          document.addEventListener(
+            'visibilitychange',
+            () => {
+              if (document.visibilityState === 'visible') cursor.classList.add('is-visible');
+            },
+            { passive: true }
+          );
+
+          // Safety fallback: if custom cursor is not visible soon, restore native cursor
+          setTimeout(() => {
+            if (!cursor.classList.contains('is-visible')) {
+              document.body.classList.remove('cbi-cursor-active');
+            }
+          }, 1000);
+
+          // React to pointer capability changes (e.g., device switches)
+          const finePointer = matchMedia('(pointer: fine)');
+          if (finePointer && finePointer.addEventListener) {
+            finePointer.addEventListener('change', ev => {
+              if (!ev.matches) {
+                document.body.classList.remove('cbi-cursor-active');
+              }
+            });
+          }
+
+          targets.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('is-hover'), { passive: true });
+            el.addEventListener('mouseleave', () => cursor.classList.remove('is-hover'), { passive: true });
+          });
+
+          function raf() {
+            tx += (mx - tx) * 0.35;
+            ty += (my - ty) * 0.35;
+            dot.style.transform = `translate3d(${tx}px, ${ty}px, 0)`;
+
+            rtx += (mx - rtx) * 0.18;
+            rty += (my - rty) * 0.18;
+            ring.style.transform = `translate3d(${rtx}px, ${rty}px, 0)`;
+
+            requestAnimationFrame(raf);
+          }
+          requestAnimationFrame(raf);
+        }
+      })();
+    </script>
+  </body>
+</html>

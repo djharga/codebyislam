@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 128" role="img" aria-label="CodeByIslam logo">
+  <defs>
+    <linearGradient id="cbi-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="cbi-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <style>
+      .wordmark { fill: #ffffff; font-family: "Poppins", "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; font-weight: 700; letter-spacing: 0.2px; }
+      .accent { fill: url(#cbi-accent); }
+    </style>
+  </defs>
+
+  <!-- Logomark -->
+  <g transform="translate(16,16)">
+    <circle cx="48" cy="48" r="44" fill="url(#cbi-gradient)"/>
+    <!-- Code glyph: < /> -->
+    <path d="M58 32 L38 48 L58 64" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+    <path d="M66 32 L86 48 L66 64" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+    <path d="M52 72 L80 24" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g aria-hidden="true">
+    <text class="wordmark" x="132" y="78" font-size="42">Code<tspan class="accent">By</tspan>Islam</text>
+  </g>
+</svg>

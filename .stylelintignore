@@ -1,0 +1,17 @@
+# ملفات النظام
+node_modules/
+.vscode/
+.git/
+
+# ملفات البناء
+dist/
+build/
+*.min.css
+
+# ملفات المكتبات الخارجية
+**/vendor/**
+**/libs/**
+
+# ملفات أخرى
+*.log
+.env 

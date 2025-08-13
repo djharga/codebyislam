@@ -1,0 +1,20 @@
+# ملفات النظام
+node_modules/
+.vscode/
+.git/
+
+# ملفات البناء
+dist/
+build/
+*.min.js
+*.min.css
+
+# ملفات التكوين
+package-lock.json
+yarn.lock
+
+# ملفات أخرى
+*.log
+.env
+.env.local
+.env.production 
